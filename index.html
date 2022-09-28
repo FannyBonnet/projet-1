@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="mini-icon.ico" type="image/x-icon">
     <title>character sheet</title>
     </head>
@@ -17,55 +18,222 @@
                     <div>Equipement</div>
                 </nav>
             </header>
-            <section>
+            <section id="characteristics">
                 <div id="box1">
-                    <div>
+                    <div class="number">
                         3 
                     </div>
-                    <div>
+                    <div class="characteristics">
                         Vigueur
                     </div>
                 </div>
                 <div id="box2">
-                    <div>
+                    <div class="number">
                         4 
                     </div>
-                    <div>
+                    <div class="characteristics">
                         Agilité
                     </div>
                 </div>
                 <div id="box3">
-                    <div>
+                    <div class="number">
                         2 
                     </div>
-                    <div>
+                    <div class="characteristics">
                         Intelligence
                     </div>
                 </div>
                 <div id="box4">
-                    <div>
+                    <div class="number">
                         2 
                     </div>
-                    <div>
+                    <div class="characteristics">
                         Ruse
                     </div>
                 </div>
                 <div id="box5">
-                    <div>
+                    <div class="number">
                         3 
                     </div>
-                    <div>
+                    <div class="characteristics">
                         Volonté
                     </div>
                 </div>
                 <div id="box6">
-                    <div>
+                    <div class="number">
                         2 
                     </div>
-                    <div>
+                    <div class="characteristics">
                         Présence
                     </div>
                 </div>
+            </section>
+            <section id="skills">
+                <div id="brawn">
+                    <ul>
+                        <li>Athlétisme 
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-sharp fa-solid fa-square-minus square"></i>
+                            <i class="fa-sharp fa-solid fa-square-minus square"></i>
+                        </li>
+                        <li>Résistance
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Corps à Corps
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Pugilat
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Sabre laser
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div id="Agility">
+                    <ul>
+                        <li>Coordination
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-sharp fa-solid fa-square-minus square"></i>
+                            <i class="fa-sharp fa-solid fa-square-minus square"></i>
+                        </li>
+                        <li>Discrétion
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Pilotage (spatial)
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Pilotage (planétaire)
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Artillerie
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Distance (lourd)
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Distance (léger)
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                    </ul>
+                </div>
+                <div id="intellect">
+                    <ul>
+                        <li>Astrogation
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                        <li>Connaissance
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                        <li>Informatique
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                        <li>Medecine
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Mécanique
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div id="Ruse">
+                    <ul>
+                        <li>Magouille
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                        <li>Perception
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Survie
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Système D
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                        <li>Tromperie
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                    </ul>
+                </div>
+                <div id="willpower">
+                    <ul>
+                        <li>Coercition
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Sang froid
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                        <li>Vigilence
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                    </ul>
+                </div>
+                <div id="presence">
+                    <ul>
+                        <li>Calme
+                            <i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i>
+                        </li>
+                        <li>Charme
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                        <li>Commandement
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                        <li>Négociation
+                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> 
+                        </li>
+                    </ul>
+                </div>
+
             </section>
             <footer>
                 <div class="attributes">
