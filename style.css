@@ -1,34 +1,77 @@
-main{
+body{
     background-color: #F2E5D5;
     font-family: sans-serif;
 }
+#container-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 2fr auto auto ;
+}
+header{
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    order: 1;
+}
+
 h1{
-    background-color: #73161E;
-    color: white;
+    //background-color: #73161E;
+    //color: white;
+    
     clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0 10%);
 }
+nav{
+    display:flex;
+    justify-content: space-around;
+}
 nav div{
-    background-color: #364959;
-    color: white;
+    //background-color: #364959;
+    //color: white;
 
 }
+#characteristicsBloc1{
+    background-color: violet;
+    order: 2;
+}
+
+#characteristicsBloc2{
+    background-color: green;
+    order: 4;
+}
+#img{
+    order: 3;
+}
+
 .box{
-    background-color: #4D5940;
+    //background-color: #4D5940;
 }
 .number{
-    background-color: white;
+    //background-color: white;
 }
 .characteristics{
-    background-color: #73161E;
-    color:white;
+    //background-color: #73161E;
+    //color:white;
 }
-li{
-    background-color: #DFEDF2;
+#skills{
+    background-color: coral;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    order:5;
+}
+ul li{
+    //background-color: #DFEDF2;
+}
+
+footer{
+    background-color: chartreuse;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    order:6;
 }
 .attributes{
-    background-color: white;
+    //background-color: white;
 }
 .attributeName{
-    background-color: #364959;
-    color:white;
+    //background-color: #364959;
+    //color:white;
 }
