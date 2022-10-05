@@ -21,6 +21,7 @@ header{
 h1{
     background-color: #73161E;
     color: white;
+    border: solid rgb(85, 82, 82) 2px;
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
     padding: 1% 4% 1%;
     display: flex;
@@ -30,13 +31,14 @@ h1{
     margin: auto;
 }
 nav{
+    margin-left: 10%;
     display:flex;
     justify-content: space-around;
 }
 nav div{
     background-color: #364959;
     color: white;
-    border-color: black;
+    border: solid  rgb(85, 82, 82) 2px;
     padding: 1% 4% 1%;
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
 }
@@ -70,6 +72,7 @@ img{
     background-color: #4D5940;
     width: 7em;
     height: 7em;
+    clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -78,18 +81,26 @@ img{
 }
 .number{
     background-color: white;
+    font-size: 2.5em;
     border-radius: 40px;
-    min-width: 50%;
-    min-height: 50%;
+    border: 7px double rgb(85, 82, 82);
+    outline: 3px solid black;
+    box-shadow: 0 0 0 4px white;
+    outline-offset: 4px;
+    min-width: 43%;
+    min-height: 43%;
+    margin-top: 7%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .characteristics{
     background-color: #73161E;
+    border: solid #4d1015 1px;
     color:white;
-    padding: 2% 8% 2%;
-    margin: 2%;
+    padding: 3% 8% 2%;
+    margin: 3%;
+    align-self: stretch;
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
 }
 #skills{
@@ -110,13 +121,20 @@ ul{
 }
 ul li{
     background-color: #DFEDF2;
+    border: solid #364959 1px;
     width: 14.5em;
     height: 1.4em;
+    padding-top: 0.2em;
     margin: 0.2em;
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
 
 }
-
+.diamond{
+    color:green;
+}
+.hexa{
+    color:gold;
+}
 footer{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -128,17 +146,27 @@ footer{
 }
 .attributes{
     background-color: white;
+    border: solid rgb(85, 82, 82) 1px;
     width: 8em;
-    height: 6em;
-    clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
+    height: 5em;
+    clip-path:polygon(20% 0, 80% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0 20%);
     display: flex;
     flex-direction: column;
 }
 .attributeName{
     background-color: #364959;
+    border: solid rgb(85, 82, 82) 2px;
     color:white;
-    clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
-    margin: 2%;
+    clip-path: polygon(15% 0, 85% 0, 100% 50%, 100% 50%, 85% 100%, 15% 100%, 0% 50%, 0 50%);
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.attribute-number{
+    font-size: 2em;
+    justify-self:center;
+    align-self:center;
+    padding-top: 0.4em; 
 }
 
 
