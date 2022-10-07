@@ -1,5 +1,7 @@
 body{
-    background-color: #F2E5D5;
+    background-image: url(./background\ portrait.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: sans-serif;
     text-align: center;
 }
@@ -15,6 +17,7 @@ header{
     min-height: 5em;
     display:flex;
     flex-direction: column;
+    margin-top: 4.3em;
     margin-bottom: 1em;
 }
 
@@ -31,7 +34,7 @@ h1{
     margin: auto;
 }
 nav{
-    margin-left: 10%;
+    margin: 2%;
     display:flex;
     justify-content: space-around;
 }
@@ -72,6 +75,7 @@ img{
     background-color: #4D5940;
     width: 7em;
     height: 7em;
+    box-shadow: 60px -16px teal;
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
     display: flex;
     flex-direction: column;
@@ -143,6 +147,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     min-height: 5em;
+    margin-bottom: 2em;
 }
 .attributes{
     background-color: white;
@@ -171,8 +176,15 @@ footer{
 
 
 @media screen and (min-width: 1200px){
+    body{
+        background-image: url(./background\ paysage1.jpg);
+        object-fit: fill;
+        background-repeat: no-repeat;
+    }
     #container-grid{
         padding:1em;
+        margin-right: 7em;
+        margin-left:7em;
         display:grid;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -191,13 +203,20 @@ footer{
         margin-right: 1em;
     }
     nav{
-        min-width: 30%;
+        margin-left: 8%;
+        width: 35%;
         justify-items: flex-start;
         align-items: center;
         display: flex;
+        justify-content: space-between;
     } 
     nav div{
-        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10em;
+        height: 3em;
+        margin: 1em;
     }
     #characteristicsBloc1{
         order:2;
@@ -214,6 +233,10 @@ footer{
         flex-direction: row;
         align-items: center;
         min-height: 10em;
+    }
+    .box{
+        width:9em;
+        height: 9em;
     }
     #skills{
         order:3;
@@ -237,5 +260,9 @@ footer{
         min-height: 5em;
         padding-left: 10em;
         padding-right: 10em;
+    }
+    .attributes{
+        width: 10em;
+        height: 6em;
     }
 }
