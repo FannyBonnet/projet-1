@@ -1,37 +1,112 @@
-//affichage des skills brawn en cliquant sur vigueur
+//pointeur sur les caractéristiques
 const vigueurClick = document.querySelector(".vigueur");
+const agiliteClick = document.querySelector(".agilite");
+const intelligenceClick = document.querySelector(".intelligence");
+const ruseClick = document.querySelector(".ruse");
+const volonteClick = document.querySelector(".volonte");
+const presenceClick = document.querySelector(".presence");
+
+//pointeur sur les listes de compétences
+const brawn = document.querySelector("#brawn");
+const agility = document.querySelector("#agility");
+const intellect = document.querySelector("#intellect");
+const ruse = document.querySelector("#ruse");
+const willpower = document.querySelector("#willpower");
+const presence = document.querySelector("#presence");
+
+//affichage des skills brawn en cliquant sur vigueur
+
 vigueurClick.addEventListener("click", function () {
-    const list = document.querySelector("#brawn");
-    list.classList.toggle("visible");
+    vigueurClick.classList.toggle("clickedbox");
+    brawn.classList.toggle("visible");
+    agiliteClick.classList.remove("clickedbox");
+    intelligenceClick.classList.remove("clickedbox");
+    ruseClick.classList.remove("clickedbox");
+    volonteClick.classList.remove("clickedbox");
+    presenceClick.classList.remove("clickedbox");
+    agility.classList.remove("visible");
+    intellect.classList.remove("visible");
+    ruse.classList.remove("visible");
+    willpower.classList.remove("visible");
+    presence.classList.remove("visible");
 });
 //affichage des skills agility en cliquant sur agilité
-const agiliteClick = document.querySelector(".agilite");
+
 agiliteClick.addEventListener("click", function () {
-    agiliteClick.style.backgroundColor="yellow";
-    const list = document.querySelector("#agility");
-    list.classList.toggle("visible");
+    agiliteClick.classList.toggle("clickedbox");
+    agility.classList.toggle("visible");
+    vigueurClick.classList.remove("clickedbox");
+    intelligenceClick.classList.remove("clickedbox");
+    ruseClick.classList.remove("clickedbox");
+    volonteClick.classList.remove("clickedbox");
+    presenceClick.classList.remove("clickedbox");
+    brawn.classList.remove("visible");
+    intellect.classList.remove("visible");
+    ruse.classList.remove("visible");
+    willpower.classList.remove("visible");
+    presence.classList.remove("visible");
 });
 //affichage des skills intellect en cliquant sur intelligence
-const intelligenceClick = document.querySelector(".intelligence");
+
 intelligenceClick.addEventListener("click", function () {
-    const list = document.querySelector("#intellect");
-    list.classList.toggle("visible");
+    intelligenceClick.classList.toggle("clickedbox");
+    intellect.classList.toggle("visible");
+    vigueurClick.classList.remove("clickedbox");
+    agiliteClick.classList.remove("clickedbox");
+    ruseClick.classList.remove("clickedbox");
+    volonteClick.classList.remove("clickedbox");
+    presenceClick.classList.remove("clickedbox");
+    brawn.classList.remove("visible");
+    agility.classList.remove("visible");
+    ruse.classList.remove("visible");
+    willpower.classList.remove("visible");
+    presence.classList.remove("visible");
 });
 //affichage des skills ruse en cliquant sur ruse
-const ruseClick = document.querySelector(".ruse");
+
 ruseClick.addEventListener("click", function () {
-    const list = document.querySelector("#ruse");
-    list.classList.toggle("visible");
+    ruseClick.classList.toggle("clickedbox");
+    ruse.classList.toggle("visible");
+    vigueurClick.classList.remove("clickedbox");
+    agiliteClick.classList.remove("clickedbox");
+    intelligenceClick.classList.remove("clickedbox");
+    volonteClick.classList.remove("clickedbox");
+    presenceClick.classList.remove("clickedbox");
+    brawn.classList.remove("visible");
+    agility.classList.remove("visible");
+    intellect.classList.remove("visible");
+    willpower.classList.remove("visible");
+    presence.classList.remove("visible");
 });
 //affichage des skills willpower en cliquant sur volonte
-const volonteClick = document.querySelector(".volonte");
+
 volonteClick.addEventListener("click", function () {
-    const list = document.querySelector("#willpower");
-    list.classList.toggle("visible");
+    volonteClick.classList.toggle("clickedbox");
+    willpower.classList.toggle("visible");
+    vigueurClick.classList.remove("clickedbox");
+    agiliteClick.classList.remove("clickedbox");
+    intelligenceClick.classList.remove("clickedbox");
+    ruseClick.classList.remove("clickedbox");
+    presenceClick.classList.remove("clickedbox");
+    brawn.classList.remove("visible");
+    agility.classList.remove("visible");
+    intellect.classList.remove("visible");
+    ruse.classList.remove("visible");
+    presence.classList.remove("visible");
 });
 //affichage des skills presence en cliquant sur presence
-const presenceClick = document.querySelector(".presence");
+
 presenceClick.addEventListener("click", function () {
-    const list = document.querySelector("#presence");
-    list.classList.toggle("visible");
+    presenceClick.classList.toggle("clickedbox");
+    presence.classList.toggle("visible");
+    vigueurClick.classList.remove("clickedbox");
+    agiliteClick.classList.remove("clickedbox");
+    intelligenceClick.classList.remove("clickedbox");
+    ruseClick.classList.remove("clickedbox");
+    volonteClick.classList.remove("clickedbox");
+    brawn.classList.remove("visible");
+    agility.classList.remove("visible");
+    intellect.classList.remove("visible");
+    ruse.classList.remove("visible");
+    willpower.classList.remove("visible");
 });

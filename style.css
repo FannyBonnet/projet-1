@@ -80,6 +80,7 @@ img{
 }
 .box{
     background-color: #4D5940;
+    transition: background-color 1s;
     width: 7em;
     height: 7em;
     box-shadow: inset -1px -1px 10px black;
@@ -149,6 +150,10 @@ ul li{
 }
 .visible{
     display: flex;
+}
+.clickedbox{
+    background-color:#9dc274;
+    transition: background-color 1s;
 }
 footer{
     grid-column-start: 1;
