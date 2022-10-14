@@ -8,6 +8,22 @@ const compDisplay2 = document.querySelector("#charac2")
 const equipementDisplay1 = document.querySelector("#equip1");
 const equipementDisplay2 = document.querySelector("#equip2");
 
+//pointeur sur les caractéristiques
+const vigueurClick = document.querySelector(".vigueur");
+const agiliteClick = document.querySelector(".agilite");
+const intelligenceClick = document.querySelector(".intelligence");
+const ruseClick = document.querySelector(".ruse");
+const volonteClick = document.querySelector(".volonte");
+const presenceClick = document.querySelector(".presence");
+
+//pointeur sur les listes de compétences
+const brawn = document.querySelector("#brawn");
+const agility = document.querySelector("#agility");
+const intellect = document.querySelector("#intellect");
+const ruse = document.querySelector("#ruse");
+const willpower = document.querySelector("#willpower");
+const presence = document.querySelector("#presence");
+
 //affichage des compétences en cliquant sur le bouton compétence
 competencesClick.addEventListener("click",function(){
     console.log("click1");
@@ -28,23 +44,13 @@ equipementClick.addEventListener("click",function(){
     equipementDisplay2.classList.toggle("visible");
     compDisplay1.classList.remove("visible");
     compDisplay2.classList.remove("visible");
+    brawn.classList.remove("visible");
+    agility.classList.remove("visible");
+    intellect.classList.remove("visible");
+    ruse.classList.remove("visible");
+    willpower.classList.remove("visible");
+    presence.classList.remove("visible");
 });
-
-//pointeur sur les caractéristiques
-const vigueurClick = document.querySelector(".vigueur");
-const agiliteClick = document.querySelector(".agilite");
-const intelligenceClick = document.querySelector(".intelligence");
-const ruseClick = document.querySelector(".ruse");
-const volonteClick = document.querySelector(".volonte");
-const presenceClick = document.querySelector(".presence");
-
-//pointeur sur les listes de compétences
-const brawn = document.querySelector("#brawn");
-const agility = document.querySelector("#agility");
-const intellect = document.querySelector("#intellect");
-const ruse = document.querySelector("#ruse");
-const willpower = document.querySelector("#willpower");
-const presence = document.querySelector("#presence");
 
 //affichage des skills brawn en cliquant sur vigueur
 
