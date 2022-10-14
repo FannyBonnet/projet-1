@@ -50,6 +50,12 @@ equipementClick.addEventListener("click",function(){
     ruse.classList.remove("visible");
     willpower.classList.remove("visible");
     presence.classList.remove("visible");
+    vigueurClick.classList.remove("clickedbox");
+    agiliteClick.classList.remove("clickedbox");
+    intelligenceClick.classList.remove("clickedbox");
+    ruseClick.classList.remove("clickedbox");
+    volonteClick.classList.remove("clickedbox");
+    presenceClick.classList.remove("clickedbox");
 });
 
 //affichage des skills brawn en cliquant sur vigueur
