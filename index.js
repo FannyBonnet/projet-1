@@ -1,3 +1,35 @@
+//pointeur sur les boutons equipement ou competences
+const competencesClick = document.querySelector("#comp");
+const equipementClick = document.querySelector("#equipement");
+
+//pointeur sur les asides
+const compDisplay1 = document.querySelector("#charac1");
+const compDisplay2 = document.querySelector("#charac2")
+const equipementDisplay1 = document.querySelector("#equip1");
+const equipementDisplay2 = document.querySelector("#equip2");
+
+//affichage des compétences en cliquant sur le bouton compétence
+competencesClick.addEventListener("click",function(){
+    console.log("click1");
+    competencesClick.classList.toggle("clicked-nav");
+    equipementClick.classList.remove("clicked-nav");
+    compDisplay1.classList.toggle("visible");
+    compDisplay2.classList.toggle("visible");
+    equipementDisplay1.classList.remove("visible");
+    equipementDisplay2.classList.remove("visible");
+});
+
+//affichage des équipements en cliquant sur le bouton équipement
+equipementClick.addEventListener("click",function(){
+    console.log("click2");
+    equipementClick.classList.toggle("clicked-nav");
+    competencesClick.classList.remove("clicked-nav");
+    equipementDisplay1.classList.toggle("visible");
+    equipementDisplay2.classList.toggle("visible");
+    compDisplay1.classList.remove("visible");
+    compDisplay2.classList.remove("visible");
+});
+
 //pointeur sur les caractéristiques
 const vigueurClick = document.querySelector(".vigueur");
 const agiliteClick = document.querySelector(".agilite");

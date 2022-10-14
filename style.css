@@ -49,20 +49,32 @@ nav div{
     box-shadow: inset -1px -1px 10px #202d37;
     padding: 1% 4% 1%;
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
+    cursor: pointer;
+    transition: 0.5s;
 }
-#characteristicsBloc1{
+nav div:hover{
+    transition: 0.5s;
+    box-shadow: inset -1px -1px 10px white
+}
+.clicked-nav{
+    height: 1.5em;;
+}
+#aside1{
     order: 2;
     max-height: 400px;
-    display: flex;
+}
+#aside2{
+    order: 4;
+    max-height: 400px;
+}
+.characteristics-menu{
+    display: none;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
-
-#characteristicsBloc2{
-    order: 4;
-    max-height: 400px;
-    display: flex;
+.equipement-menu{
+    display: none;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
@@ -71,25 +83,33 @@ nav div{
     order: 3;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-image: url(./background\ imp.png);
+    background-size: 100% 100%;
+    min-width: 12em;
+    min-height: 24em;
 }
 img{
-    max-height: 400px;    
+    max-height: 280px;    
     object-fit: contain;
-    box-shadow: 0px 0px 10px 5px #696969e6;
-    outline: 5px solid #73161E;
 }
 .box{
-    background-color: #4D5940;
-    transition: background-color 1s;
+    background-image: url(./box\ background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 7em;
     height: 7em;
-    box-shadow: inset -1px -1px 10px black;
-    clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
     
+}
+.number:hover{
+    transition: 0.5s;
+    min-width: 50%;
+    min-height: 50%;
 }
 .number{
     background-color: white;
@@ -99,6 +119,7 @@ img{
     outline: 3px solid black;
     box-shadow: 0 0 0 4px white;
     outline-offset: 4px;
+    transition: 0.5s;
     min-width: 43%;
     min-height: 43%;
     margin-top: 7%;
@@ -114,6 +135,26 @@ img{
     margin: 3%;
     align-self: stretch;
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
+}
+.icon{
+    border-radius: 40px;
+    background-color: white;
+    border: 7px double rgb(85, 82, 82);
+    outline: 3px solid black;
+    box-shadow: 0 0 0 4px white;
+    outline-offset: 4px;
+    transition: 0.5s;
+    min-width: 43%;
+    min-height: 43%;
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-icon{
+    width: 45px;
+    border-radius: 40px;
 }
 #skills{
     grid-column-start: 1;
@@ -152,8 +193,7 @@ ul li{
     display: flex;
 }
 .clickedbox{
-    background-color:#9dc274;
-    transition: background-color 1s;
+   box-shadow: 0 0 0 4px #73161E;
 }
 footer{
     grid-column-start: 1;
@@ -166,21 +206,22 @@ footer{
     margin-bottom: 5em;
 }
 .attributes{
-    background-color: white;
-    border: solid rgb(85, 82, 82) 1px;
-    box-shadow: inset -1px -1px 10px #979292;
+    background-image: url(./attributes.png);
+    background-size: 100% 100%;
     width: 8em;
     height: 5em;
-    clip-path:polygon(20% 0, 80% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0 20%);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .attributeName{
     background-color: #364959;
     border: solid rgb(85, 82, 82) 2px;
     color:white;
     clip-path: polygon(15% 0, 85% 0, 100% 50%, 100% 50%, 85% 100%, 15% 100%, 0% 50%, 0 50%);
-    margin-top: 4%;
+    width: 80%;
+    font-size: 0.8em;
+    margin-top: 6%;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -235,21 +276,31 @@ footer{
         height: 3em;
         margin: 1em;
     }
-    #characteristicsBloc1{
+    .clicked-nav{
+        height: 4em;
+    }
+    #aside1{
         order:2;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        align-items: center;
         min-height: 10em;
     }
-    #characteristicsBloc2{
+    #aside2{
         order:5;
-        display: flex;
+        min-height: 10em;
+    }
+    .characteristics-menu{
+        display: none;
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
-        min-height: 10em;
+    }
+    .equipement-menu{
+        display: none;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+    .visible{
+        display:flex;
     }
     .box{
         width:9em;
@@ -266,10 +317,11 @@ footer{
     #img{
         order:4;
         grid-area: 2/3/6/4;
-        max-width: 15em;
+        width: 20em;
+        max-height: 30em;
     }
     img{
-        max-height: 500px;    
+        max-height: 400px;    
         object-fit: contain;
     }
     footer{
