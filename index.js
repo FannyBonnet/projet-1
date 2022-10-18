@@ -24,6 +24,22 @@ const ruse = document.querySelector("#ruse");
 const willpower = document.querySelector("#willpower");
 const presence = document.querySelector("#presence");
 
+//pointeur sur les types d'équipement
+const poingClick = document.querySelector(".armes-poing");
+const distanceClick = document.querySelector(".armes-distance");
+const armureClick = document.querySelector(".armure");
+const ameliorationsClick = document.querySelector(".ameliorations");
+const objetClick = document.querySelector(".objets");
+const medicalClick = document.querySelector(".medical");
+
+//pointeur sur les listes d'équipement
+const contact = document.querySelector("#contact-weapon");
+const ranged = document.querySelector("#ranged-weapon");
+const armor = document.querySelector("#armor");
+const attachement= document.querySelector("#attachement");
+const medic = document.querySelector("#medic");
+const gears = document.querySelector("#gears");
+
 //affichage des compétences en cliquant sur le bouton compétence
 competencesClick.addEventListener("click",function(){
     console.log("click1");
@@ -33,6 +49,18 @@ competencesClick.addEventListener("click",function(){
     compDisplay2.classList.toggle("visible");
     equipementDisplay1.classList.remove("visible");
     equipementDisplay2.classList.remove("visible");
+    poingClick.classList.remove("clickedbox");
+    distanceClick.classList.remove("clickedbox");
+    armureClick.classList.remove("clickedbox");
+    ameliorationsClick.classList.remove("clickedbox");
+    objetClick.classList.remove("clickedbox");
+    medicalClick.classList.remove("clickedbox");
+    contact.classList.remove("visible");
+    ranged.classList.remove("visible");
+    armor.classList.remove("visible");
+    attachement.classList.remove("visible");
+    medic.classList.remove("visible");
+    gears.classList.remove("visible");
 });
 
 //affichage des équipements en cliquant sur le bouton équipement
@@ -59,7 +87,6 @@ equipementClick.addEventListener("click",function(){
 });
 
 //affichage des skills brawn en cliquant sur vigueur
-
 vigueurClick.addEventListener("click", function () {
     vigueurClick.classList.toggle("clickedbox");
     brawn.classList.toggle("visible");
@@ -74,8 +101,8 @@ vigueurClick.addEventListener("click", function () {
     willpower.classList.remove("visible");
     presence.classList.remove("visible");
 });
-//affichage des skills agility en cliquant sur agilité
 
+//affichage des skills agility en cliquant sur agilité
 agiliteClick.addEventListener("click", function () {
     agiliteClick.classList.toggle("clickedbox");
     agility.classList.toggle("visible");
@@ -90,8 +117,8 @@ agiliteClick.addEventListener("click", function () {
     willpower.classList.remove("visible");
     presence.classList.remove("visible");
 });
-//affichage des skills intellect en cliquant sur intelligence
 
+//affichage des skills intellect en cliquant sur intelligence
 intelligenceClick.addEventListener("click", function () {
     intelligenceClick.classList.toggle("clickedbox");
     intellect.classList.toggle("visible");
@@ -106,8 +133,8 @@ intelligenceClick.addEventListener("click", function () {
     willpower.classList.remove("visible");
     presence.classList.remove("visible");
 });
-//affichage des skills ruse en cliquant sur ruse
 
+//affichage des skills ruse en cliquant sur ruse
 ruseClick.addEventListener("click", function () {
     ruseClick.classList.toggle("clickedbox");
     ruse.classList.toggle("visible");
@@ -122,8 +149,8 @@ ruseClick.addEventListener("click", function () {
     willpower.classList.remove("visible");
     presence.classList.remove("visible");
 });
-//affichage des skills willpower en cliquant sur volonte
 
+//affichage des skills willpower en cliquant sur volonte
 volonteClick.addEventListener("click", function () {
     volonteClick.classList.toggle("clickedbox");
     willpower.classList.toggle("visible");
@@ -138,8 +165,8 @@ volonteClick.addEventListener("click", function () {
     ruse.classList.remove("visible");
     presence.classList.remove("visible");
 });
-//affichage des skills presence en cliquant sur presence
 
+//affichage des skills presence en cliquant sur presence
 presenceClick.addEventListener("click", function () {
     presenceClick.classList.toggle("clickedbox");
     presence.classList.toggle("visible");
@@ -154,3 +181,99 @@ presenceClick.addEventListener("click", function () {
     ruse.classList.remove("visible");
     willpower.classList.remove("visible");
 });
+
+//affichage de la liste contact-weapon en cliquant sur armes de poing
+poingClick.addEventListener("click", function () {
+    poingClick.classList.toggle("clickedbox");
+    contact.classList.toggle("visible");
+    distanceClick.classList.remove("clickedbox");
+    armureClick.classList.remove("clickedbox");
+    ameliorationsClick.classList.remove("clickedbox");
+    objetClick.classList.remove("clickedbox");
+    medicalClick.classList.remove("clickedbox");
+    ranged.classList.remove("visible");
+    armor.classList.remove("visible");
+    attachement.classList.remove("visible");
+    medic.classList.remove("visible");
+    gears.classList.remove("visible");
+});
+
+//affichage de la liste ranged-weapon en cliquant sur armes à distance
+distanceClick.addEventListener("click", function () {
+    distanceClick.classList.toggle("clickedbox");
+    ranged.classList.toggle("visible");
+    poingClick.classList.remove("clickedbox");
+    armureClick.classList.remove("clickedbox");
+    ameliorationsClick.classList.remove("clickedbox");
+    objetClick.classList.remove("clickedbox");
+    medicalClick.classList.remove("clickedbox");
+    contact.classList.remove("visible");
+    armor.classList.remove("visible");
+    attachement.classList.remove("visible");
+    medic.classList.remove("visible");
+    gears.classList.remove("visible");
+});
+
+//affichage de la liste armor en cliquant sur armures
+armureClick.addEventListener("click", function () {
+   armureClick.classList.toggle("clickedbox");
+    armor.classList.toggle("visible");
+    poingClick.classList.remove("clickedbox");
+    distanceClick.classList.remove("clickedbox");
+    ameliorationsClick.classList.remove("clickedbox");
+    objetClick.classList.remove("clickedbox");
+    medicalClick.classList.remove("clickedbox");
+    contact.classList.remove("visible");
+    ranged.classList.remove("visible");
+    attachement.classList.remove("visible");
+    medic.classList.remove("visible");
+    gears.classList.remove("visible");
+});
+
+//affichage de la liste attachement en cliquant sur ameliorations
+ameliorationsClick.addEventListener("click", function () {
+    ameliorationsClick.classList.toggle("clickedbox");
+     attachement.classList.toggle("visible");
+     poingClick.classList.remove("clickedbox");
+     distanceClick.classList.remove("clickedbox");
+     armureClick.classList.remove("clickedbox");
+     objetClick.classList.remove("clickedbox");
+     medicalClick.classList.remove("clickedbox");
+     contact.classList.remove("visible");
+     ranged.classList.remove("visible");
+     armor.classList.remove("visible");
+     medic.classList.remove("visible");
+     gears.classList.remove("visible");
+ });
+
+ //affichage de la liste gears en cliquant sur objet
+ objetClick.addEventListener("click", function () {
+     objetClick.classList.toggle("clickedbox");
+     gears.classList.toggle("visible");
+     poingClick.classList.remove("clickedbox");
+     distanceClick.classList.remove("clickedbox");
+     armureClick.classList.remove("clickedbox");
+     ameliorationsClick.classList.remove("clickedbox");
+     medicalClick.classList.remove("clickedbox");
+     contact.classList.remove("visible");
+     ranged.classList.remove("visible");
+     armor.classList.remove("visible");
+     medic.classList.remove("visible");
+     attachement.classList.remove("visible");
+ });
+
+ //affichage de la liste medic en cliquant sur medical
+ medicalClick.addEventListener("click", function () {
+     medicalClick.classList.toggle("clickedbox");
+     medic.classList.toggle("visible");
+     poingClick.classList.remove("clickedbox");
+     distanceClick.classList.remove("clickedbox");
+     armureClick.classList.remove("clickedbox");
+     objetClick.classList.remove("clickedbox");
+     ameliorationsClick.classList.remove("clickedbox");
+     contact.classList.remove("visible");
+     ranged.classList.remove("visible");
+     armor.classList.remove("visible");
+     attachement.classList.remove("visible");
+     gears.classList.remove("visible");
+ });
