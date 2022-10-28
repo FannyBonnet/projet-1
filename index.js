@@ -40,11 +40,51 @@ const attachement= document.querySelector("#attachement");
 const medic = document.querySelector("#medic");
 const gears = document.querySelector("#gears");
 
+//pointeur sur les équipements
+const listKnife = document.querySelector("#list-knife");
+const listBlaster = document.querySelector("#list-blaster");
+const listRifle = document.querySelector("#list-rifle");
+const listFrag = document.querySelector("#list-frag");
+const listStun = document.querySelector("#list-stun");
+const listPadded = document.querySelector("#list-padded");
+const listLaminate = document.querySelector("#list-laminate");
+const listRepulsor = document.querySelector("#list-repulsor");
+const listBanta = document.querySelector("#list-banta");
+const listLaser = document.querySelector("#list-laser");
+const listGoggles = document.querySelector("#list-goggles");
+const listMist = document.querySelector("#list-mist");
+const listCom = document.querySelector("#list-com");
+const listStimpack = document.querySelector("#list-stimpack");
+const listMedpack = document.querySelector("#list-medpack");
+
+//pointeur sur les descripstifs des équipements
+const vibroknife = document.querySelector("#vibroknife");
+const pistol = document.querySelector("#pistol");
+const rifle = document.querySelector("#rifle");
+const frag = document.querySelector("#frag");
+const stun = document.querySelector("#stun");
+const padded = document.querySelector("#padded");
+const laminate = document.querySelector("#laminate");
+const repulsor = document.querySelector("#repulsor");
+const banta = document.querySelector("#banta");
+const laser = document.querySelector("#laser");
+const goggles = document.querySelector("#goggles");
+const mist = document.querySelector("#mist");
+const comlink = document.querySelector("#comlink");
+const stimpack = document.querySelector("#stimpack");
+const medpack = document.querySelector("#medpack");
+
+//pointeur sur l'image du personnage
+const characterImg = document.querySelector("#character");
+
 //affichage des compétences en cliquant sur le bouton compétence
 competencesClick.addEventListener("click",function(){
     console.log("click1");
+    //ajoute la classe clicked-nav à ma div #comp
     competencesClick.classList.toggle("clicked-nav");
+    //enlève la classe clicked nav à ma div #equipements
     equipementClick.classList.remove("clicked-nav");
+    //enlève les classes visible et clickedbox à toutes mes listes et asides
     compDisplay1.classList.toggle("visible");
     compDisplay2.classList.toggle("visible");
     equipementDisplay1.classList.remove("visible");
@@ -61,6 +101,35 @@ competencesClick.addEventListener("click",function(){
     attachement.classList.remove("visible");
     medic.classList.remove("visible");
     gears.classList.remove("visible");
+    brawn.classList.remove("visible");
+    agility.classList.remove("visible");
+    intellect.classList.remove("visible");
+    ruse.classList.remove("visible");
+    willpower.classList.remove("visible");
+    presence.classList.remove("visible");
+    vigueurClick.classList.remove("clickedbox");
+    agiliteClick.classList.remove("clickedbox");
+    intelligenceClick.classList.remove("clickedbox");
+    ruseClick.classList.remove("clickedbox");
+    volonteClick.classList.remove("clickedbox");
+    presenceClick.classList.remove("clickedbox");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
+    
 });
 
 //affichage des équipements en cliquant sur le bouton équipement
@@ -84,6 +153,34 @@ equipementClick.addEventListener("click",function(){
     ruseClick.classList.remove("clickedbox");
     volonteClick.classList.remove("clickedbox");
     presenceClick.classList.remove("clickedbox");
+    contact.classList.remove("visible");
+    ranged.classList.remove("visible");
+    armor.classList.remove("visible");
+    attachement.classList.remove("visible");
+    medic.classList.remove("visible");
+    gears.classList.remove("visible");
+    poingClick.classList.remove("clickedbox");
+    distanceClick.classList.remove("clickedbox");
+    armureClick.classList.remove("clickedbox");
+    ameliorationsClick.classList.remove("clickedbox");
+    objetClick.classList.remove("clickedbox");
+    medicalClick.classList.remove("clickedbox");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage des skills brawn en cliquant sur vigueur
@@ -100,6 +197,22 @@ vigueurClick.addEventListener("click", function () {
     ruse.classList.remove("visible");
     willpower.classList.remove("visible");
     presence.classList.remove("visible");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage des skills agility en cliquant sur agilité
@@ -116,6 +229,22 @@ agiliteClick.addEventListener("click", function () {
     ruse.classList.remove("visible");
     willpower.classList.remove("visible");
     presence.classList.remove("visible");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage des skills intellect en cliquant sur intelligence
@@ -132,6 +261,22 @@ intelligenceClick.addEventListener("click", function () {
     ruse.classList.remove("visible");
     willpower.classList.remove("visible");
     presence.classList.remove("visible");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage des skills ruse en cliquant sur ruse
@@ -148,6 +293,22 @@ ruseClick.addEventListener("click", function () {
     intellect.classList.remove("visible");
     willpower.classList.remove("visible");
     presence.classList.remove("visible");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage des skills willpower en cliquant sur volonte
@@ -164,6 +325,22 @@ volonteClick.addEventListener("click", function () {
     intellect.classList.remove("visible");
     ruse.classList.remove("visible");
     presence.classList.remove("visible");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage des skills presence en cliquant sur presence
@@ -180,6 +357,22 @@ presenceClick.addEventListener("click", function () {
     intellect.classList.remove("visible");
     ruse.classList.remove("visible");
     willpower.classList.remove("visible");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage de la liste contact-weapon en cliquant sur armes de poing
@@ -196,6 +389,22 @@ poingClick.addEventListener("click", function () {
     attachement.classList.remove("visible");
     medic.classList.remove("visible");
     gears.classList.remove("visible");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage de la liste ranged-weapon en cliquant sur armes à distance
@@ -212,6 +421,22 @@ distanceClick.addEventListener("click", function () {
     attachement.classList.remove("visible");
     medic.classList.remove("visible");
     gears.classList.remove("visible");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage de la liste armor en cliquant sur armures
@@ -228,6 +453,22 @@ armureClick.addEventListener("click", function () {
     attachement.classList.remove("visible");
     medic.classList.remove("visible");
     gears.classList.remove("visible");
+    characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
 });
 
 //affichage de la liste attachement en cliquant sur ameliorations
@@ -244,6 +485,22 @@ ameliorationsClick.addEventListener("click", function () {
      armor.classList.remove("visible");
      medic.classList.remove("visible");
      gears.classList.remove("visible");
+     characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
  });
 
  //affichage de la liste gears en cliquant sur objet
@@ -260,12 +517,29 @@ ameliorationsClick.addEventListener("click", function () {
      armor.classList.remove("visible");
      medic.classList.remove("visible");
      attachement.classList.remove("visible");
+     characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
  });
 
  //affichage de la liste medic en cliquant sur medical
  medicalClick.addEventListener("click", function () {
      medicalClick.classList.toggle("clickedbox");
      medic.classList.toggle("visible");
+     //enlève la classe clickedbox à mes autres box et listes
      poingClick.classList.remove("clickedbox");
      distanceClick.classList.remove("clickedbox");
      armureClick.classList.remove("clickedbox");
@@ -276,4 +550,320 @@ ameliorationsClick.addEventListener("click", function () {
      armor.classList.remove("visible");
      attachement.classList.remove("visible");
      gears.classList.remove("visible");
+     characterImg.classList.remove("hidden");
+     vibroknife.classList.remove("visible");
+     pistol.classList.remove("visible");
+     rifle.classList.remove("visible");
+     frag.classList.remove("visible");
+     stun.classList.remove("visible");
+     padded.classList.remove("visible");
+     laminate.classList.remove("visible");
+     repulsor.classList.remove("visible");
+     banta.classList.remove("visible");
+     laser.classList.remove("visible");
+     goggles.classList.remove("visible");
+     mist.classList.remove("visible");
+     comlink.classList.remove("visible");
+     stimpack.classList.remove("visible");
+     medpack.classList.remove("visible");
  });
+
+ //affichage des détails en cliquant sur vibroknife
+ listKnife.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    vibroknife.classList.toggle("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+ });
+
+//affichage des détails en cliquant sur blaster
+listBlaster.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    pistol.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+ });
+ 
+//affichage des détails en cliquant sur rifle
+listRifle.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    rifle.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+ });
+
+ //affichage des détails en cliquant sur grenade frag
+listFrag.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    frag.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+ });
+
+//affichage des détails en cliquant sur grenade etourdissante
+listStun.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    stun.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur tenue matelassée
+listPadded.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    padded.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur armure
+listLaminate.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    laminate.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur repulseur
+listRepulsor.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    repulsor.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur le viseur Banta
+listBanta.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    banta.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur le viseur laser
+listLaser.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    laser.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur les jumelles de visée
+listGoggles.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    goggles.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur le générateur de fumée
+listMist.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    mist.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur le comlink
+listCom.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    comlink.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    stimpack.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur le stimpack
+listStimpack.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    stimpack.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    medpack.classList.remove("visible");
+});
+
+//affichage des détails en cliquant sur le medpack
+listMedpack.addEventListener("click", function () {
+    characterImg.classList.add("hidden");
+    medpack.classList.toggle("visible");
+    vibroknife.classList.remove("visible");
+    pistol.classList.remove("visible");
+    rifle.classList.remove("visible");
+    frag.classList.remove("visible");
+    stun.classList.remove("visible");
+    padded.classList.remove("visible");
+    laminate.classList.remove("visible");
+    repulsor.classList.remove("visible");
+    banta.classList.remove("visible");
+    laser.classList.remove("visible");
+    goggles.classList.remove("visible");
+    mist.classList.remove("visible");
+    comlink.classList.remove("visible");
+    stimpack.classList.remove("visible");
+});
