@@ -20,24 +20,24 @@
             </header>
             <aside id="aside1">
                 <div class="characteristics-menu" id="charac1">
-                    <div class="box">
-                        <div class="number vigueur">
+                    <div class="box vigueur">
+                        <div class="number">
                             3
                         </div>
                         <div class="characteristics">
                             Vigueur
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="number agilite">
+                    <div class="box agilite">
+                        <div class="number">
                             4 
                         </div>
                         <div class="characteristics">
                             Agilité
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="number intelligence">
+                    <div class="box intelligence">
+                        <div class="number">
                             2 
                         </div>
                         <div class="characteristics">
@@ -74,24 +74,24 @@
             </aside>
             <aside id="aside2">
                 <div class="characteristics-menu" id="charac2">
-                    <div class="box">
-                        <div class="number ruse">
+                    <div class="box ruse">
+                        <div class="number">
                             2 
                         </div>
                         <div class="characteristics">
                             Ruse
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="number volonte">
+                    <div class="box volonte">
+                        <div class="number">
                             3 
                         </div>
                         <div class="characteristics">
                             Volonté
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="number presence">
+                    <div class="box presence">
+                        <div class="number">
                             2 
                         </div>
                         <div class="characteristics">
@@ -127,209 +127,321 @@
                 </div>
             </aside>
             <section id="img">
-                <img src="./img.gif" alt="GIF du personnage"/>
+                <img src="./img.gif" id="character" alt="GIF du personnage"/>
+                <ul id="vibroknife">
+                        <img src="./équipement/vibroknife.png" alt="image du vibroknife">
+                        <li>Compétence: Corps à corps</li>
+                        <li>portée: engagée</li>
+                        <li>Dégats: 4</li>
+                        <li>Critique: 2</li>
+                        <li>Qualités: Perce 2</li>
+                </ul>
+                <ul id="pistol">
+                    <img src="./équipement/blaster.png" alt="image du blaster">
+                    <li>Compétence: Armes à distance (leger)</li>
+                    <li>portée: Moyenne</li>
+                    <li>Dégats: 6</li>
+                    <li>Critique: 3</li>
+                    <li>Qualités: étourdissant</li>
+                </ul>
+                <ul id="rifle">
+                    <img src="./équipement/rifle.png" alt="image du fusil">
+                    <li>Compétence: Armes à distance (lourde)</li>
+                    <li>portée: Longue</li>
+                    <li>Dégats: 10</li>
+                    <li>Critique: 3</li>
+                    <li>Emplacements: 4</li>
+                    <li>Qualités: encombrant 3 <br>
+                        2 avantages: tir automatique(+1dif.) <br>
+                        2 avantages: désorientation <br>
+                        3 avantages: blast 6</li>
+                </ul>
+                <ul id="frag">
+                    <img src="./équipement/frag.png" alt="image d'une grenade">
+                    <li>Compétence: Armes à distance (leger)</li>
+                    <li>portée: Courte</li>
+                    <li>Dégats: 8</li>
+                    <li>Critique: 4</li>
+                    <li>Qualités: blast 6</li>
+                </ul>
+                <ul id="stun">
+                    <img src="./équipement/stun.png" alt="image d'une grenade étourdissante">
+                    <li>Compétence: Armes à distance (leger)</li>
+                    <li>portée: Courte</li>
+                    <li>Dégats: 8</li>
+                    <li>Critique: 0</li>
+                    <li>Qualités: blast 8, désorientation 3</li>
+                </ul>
+                <ul id="padded">
+                    <img src="./équipement/padded.png" id="padded-armor" alt="image d'une armure">
+                    <li>Encaissement: 2</li>
+                    <li>Défense: 0</li>
+                    <li>Emplacements: 0</li>
+                </ul>
+                <ul id="laminate">
+                    <img src="./équipement/laminate.png" id="laminate-armor" alt="image d'une armure">
+                    <li>Encaissement: 2</li>
+                    <li>Défense: 0</li>
+                    <li>Emplacements: 3</li>
+                </ul>
+                <ul id="repulsor">
+                    <img src="./équipement/repulsor.png" alt="image du repulseur">
+                    <li>Compétence: Coordination</li>
+                    <li>Emplacement: 2</li>
+                    <li>Permet de fonctionner comme un véhicule <br>
+                        vitesse: 1, stress: 2, maniabilité -1</li>
+                    <li>Altitude max: 75m.</li>
+                    <li>Controle des chutes de n'importe quelle alt.</li>
+                </ul>
+                <ul id="banta">
+                    <img src="./équipement/lasersight.jpg" alt="image du viseur">
+                  <li>Emplacement: 1</li>  
+                  <li>Qualité: 1 avantage automatique</li>
+                </ul>
+                <ul id="laser">
+                    <img src="./équipement/lasersight.jpg" alt="image du viseur">
+                    <li>Emplacement: 1</li>
+                    <li>Précis 1 (+1<i class="fa-solid fa-square blue"></i>)</li>
+                    <li>Perception -1D diff sur faible luminosité</li>
+                </ul>
+                <ul id="goggles">
+                    <img src="./équipement/goggles.png" alt="image des jumelles">
+                    <li>Compétence: Artillerie</li>
+                    <li>Augmente le gabarit de la cible de 1</li>
+                </ul>
+                <ul id="mist">
+                    <img src="./équipement/instamist.png" alt="image du générateur de fumée">
+                    <li>Utilisation: 1 action</li>
+                    <li>artillerie <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-square"></i> </li>
+                    <li>perception <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-square"></i> </li>
+                    <li>tir <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-square"></i>
+                        <i class="fa-regular fa-square"></i></i> </li>
+                    <li>discretion +<i class="fa-solid fa-square blue"></i>
+                        <i class="fa-solid fa-square blue"></i>
+                        <i class="fa-solid fa-square blue"></i></li>
+                </ul>
+                <ul id="comlink">
+                    <img src="./équipement/comlink.png" alt="image du communicateur">
+                    <li>Transmissions portée moyenne (echelle planétaire)</li>
+                    <li><i class="fa-solid fa-square"></i> pour brouiller ou intercepter</li>
+                </ul>
+                <ul id="stimpack">
+                    <img src="./équipement/stimpack.png" alt="image du stimpack">
+                    <li>Restaure 5 points de blessure à la première utilisation</li>
+                    <li>Diminue d'un point à chaque utilisation sur le même jour</li>
+                </ul>
+                <ul id="medpack">
+                    <img src="./équipement/medpack.png" alt="image du medpack">
+                    <li>garanti 1<i class="fa-solid fa-square blue"></i> sur chaque jet de médecine</li>
+                </ul>
             </section>
             <section id="skills">
                 <div class="skill">
                     <ul id="brawn">
                         <li>Athlétisme 
-                            <i class="fa-solid fa-certificate hexa"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-sharp fa-solid fa-square-minus square"></i>
-                            <i class="fa-sharp fa-solid fa-square-minus square"></i>
+                            <i class="fa-sharp fa-solid fa-square-minus square"></i></span>
                         </li>
                         <li>Résistance
+                            <span><i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Corps à Corps
-                            <i class="fa-solid fa-certificate hexa"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Pugilat
+                            <span><i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Sabre laser
+                            <span><i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                     </ul>
                 </div>
                 <div class="skill">
                     <ul id="agility">
                         <li>Coordination
-                            <i class="fa-solid fa-certificate hexa"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-sharp fa-solid fa-square-minus square"></i>
-                            <i class="fa-sharp fa-solid fa-square-minus square"></i>
+                            <i class="fa-sharp fa-solid fa-square-minus square"></i></span>
                         </li>
                         <li>Discrétion
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Pilotage (spatial)
+                            <span><i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Pilotage (planétaire)
+                            <span><i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Artillerie
+                            <span><i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Distance (lourd)
-                            <i class="fa-solid fa-certificate hexa"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
                             <i class="fa-solid fa-certificate hexa"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Distance (léger)
-                            <i class="fa-solid fa-certificate hexa"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
                             <i class="fa-solid fa-certificate hexa"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                     </ul>
                 </div>
                 <div class="skill">
                     <ul id="intellect">
                         <li>Astrogation
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span> 
                         </li>
                         <li>Connaissance
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span> 
                         </li>
                         <li>Informatique
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span> 
                         </li>
                         <li>Medecine
-                            <i class="fa-solid fa-certificate hexa"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Mécanique
-                            <i class="fa-solid fa-certificate hexa"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                     </ul>
                 </div>
                 <div class="skill">
                     <ul id="ruse">
                         <li>Magouille
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i> </span>
                         </li>
                         <li>Perception
-                            <i class="fa-solid fa-certificate hexa"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Survie
-                            <i class="fa-solid fa-certificate hexa"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Système D
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span> 
                         </li>
                         <li>Tromperie
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                     </ul>
                 </div>
                 <div class="skill">
                     <ul id="willpower">
                         <li>Coercition
+                            <span><i class="fa-solid fa-diamond diamond"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Sang froid
-                            <i class="fa-solid fa-certificate hexa"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <i class="fa-solid fa-diamond diamond"></i></span> 
                         </li>
                         <li>Vigilence
-                            <i class="fa-solid fa-certificate hexa"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
                             <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <i class="fa-solid fa-diamond diamond"></i></span> 
                         </li>
                     </ul>
                 </div>
                 <div class="skill">
                     <ul id="presence">
                         <li>Calme
-                            <i class="fa-solid fa-certificate hexa"></i>
-                            <i class="fa-solid fa-diamond diamond"></i>
+                            <span><i class="fa-solid fa-certificate hexa"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span>
                         </li>
                         <li>Charme
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span> 
                         </li>
                         <li>Commandement
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span> 
                         </li>
                         <li>Négociation
-                            <i class="fa-solid fa-diamond diamond"></i>
-                            <i class="fa-solid fa-diamond diamond"></i> 
+                            <span><i class="fa-solid fa-diamond diamond"></i>
+                            <i class="fa-solid fa-diamond diamond"></i></span> 
                         </li>
                     </ul>
                 </div>
                 <div class="equipement">
                     <ul id="contact-weapon">
-                        <li>Vibroknife</li>
+                        <li id="list-knife">Vibroknife</li>
                     </ul>
                 </div>
                 <div class="equipement">
                     <ul id="ranged-weapon">
-                        <li>Pistolet Blaster</li>
-                        <li>Fusil Blaster Lourd</li>
-                        <li>Grenade Frag</li>
-                        <li>Grenade Etourdissante</li>
+                        <li id="list-blaster">Pistolet Blaster</li>
+                        <li id="list-rifle">Fusil Blaster Lourd</li>
+                        <li id="list-frag">Grenade Frag</li>
+                        <li id="list-stun">Grenade Etourdissante</li>
                     </ul>
                 </div>
                 <div class="equipement">
                     <ul id="armor">
-                        <li>Tenue Matelassée</li>
-                        <li>Laminate</li>
+                        <li id="list-padded">Tenue Matelassée</li>
+                        <li id="list-laminate">Laminate</li>
                     </ul>
                 </div>
                 <div class="equipement">
                     <ul id="attachement">
-                        <li>Repulsor Pack</li>
-                        <li>Lasersight</li>
+                        <li id="list-repulsor">Repulsor Pack</li>
+                        <li id="list-banta">lunette de tir Banta'eye</li>
+                        <li id="list-laser">lunette de visée électronique</li>
                     </ul>
                 </div>
                 <div class="equipement">
                     <ul id="medic">
-                        <li>Stimpack</li>
-                        <li>Medpack</li>
+                        <li id="list-stimpack">Stimpack</li>
+                        <li id="list-medpack">Medpack</li>
                     </ul>
                 </div>
                 <div class="equipement">
                     <ul id="gears">
-                        <li>Jumelles de visée</li>
-                        <li>Générateur de fumée</li>
-                        <li>Communicateur</li>
+                        <li id="list-goggles">Jumelles de visée</li>
+                        <li id="list-mist">Générateur de fumée</li>
+                        <li id="list-com">Communicateur</li>
                     </ul>
                 </div>
             </section>
