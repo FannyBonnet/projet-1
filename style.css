@@ -58,6 +58,11 @@ nav div{
 .clicked-nav{
     box-shadow: inset -1px -1px 10px white;
 }
+.clicked-li{
+    height: 2.5em;
+    padding-top: 6%;
+    box-shadow: inset -1px -1px 10px #0091c5;
+}
 #aside1{
     order: 2;
     max-height: 400px;
@@ -210,6 +215,9 @@ ul li{
     margin: 0.2em;
     clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0 10%);
 
+}
+.equipement ul li{
+    cursor: pointer;   
 }
 .diamond{
     color:green;

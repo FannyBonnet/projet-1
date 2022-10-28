@@ -129,6 +129,21 @@ competencesClick.addEventListener("click",function(){
      comlink.classList.remove("visible");
      stimpack.classList.remove("visible");
      medpack.classList.remove("visible");
+     listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     
 });
 
@@ -181,6 +196,21 @@ equipementClick.addEventListener("click",function(){
      comlink.classList.remove("visible");
      stimpack.classList.remove("visible");
      medpack.classList.remove("visible");
+     listMedpack.classList.remove("clicked-li");
+     listStimpack.classList.remove("clicked-li");
+     listCom.classList.remove("clicked-li");
+     listMist.classList.remove("clicked-li");
+     listGoggles.classList.remove("clicked-li");
+     listLaser.classList.remove("clicked-li");
+     listBanta.classList.remove("clicked-li");
+     listRepulsor.classList.remove("clicked-li");
+     listLaminate.classList.remove("clicked-li");
+     listPadded.classList.remove("clicked-li");
+     listStun.classList.remove("clicked-li");
+     listFrag.classList.remove("clicked-li");
+     listRifle.classList.remove("clicked-li");
+     listBlaster.classList.remove("clicked-li");
+     listKnife.classList.remove("clicked-li");
 });
 
 //affichage des skills brawn en cliquant sur vigueur
@@ -572,6 +602,21 @@ ameliorationsClick.addEventListener("click", function () {
  listKnife.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     vibroknife.classList.toggle("visible");
+    listKnife.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
     frag.classList.remove("visible");
@@ -592,6 +637,21 @@ ameliorationsClick.addEventListener("click", function () {
 listBlaster.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     pistol.classList.toggle("visible");
+    listBlaster.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     rifle.classList.remove("visible");
     frag.classList.remove("visible");
@@ -612,6 +672,21 @@ listBlaster.addEventListener("click", function () {
 listRifle.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     rifle.classList.toggle("visible");
+    listRifle.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     frag.classList.remove("visible");
@@ -632,6 +707,21 @@ listRifle.addEventListener("click", function () {
 listFrag.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     frag.classList.toggle("visible");
+    listFrag.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -652,6 +742,21 @@ listFrag.addEventListener("click", function () {
 listStun.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     stun.classList.toggle("visible");
+    listStun.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -672,6 +777,21 @@ listStun.addEventListener("click", function () {
 listPadded.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     padded.classList.toggle("visible");
+    listPadded.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -692,6 +812,21 @@ listPadded.addEventListener("click", function () {
 listLaminate.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     laminate.classList.toggle("visible");
+    listLaminate.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -712,6 +847,21 @@ listLaminate.addEventListener("click", function () {
 listRepulsor.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     repulsor.classList.toggle("visible");
+    listRepulsor.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -732,6 +882,21 @@ listRepulsor.addEventListener("click", function () {
 listBanta.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     banta.classList.toggle("visible");
+    listBanta.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -752,6 +917,21 @@ listBanta.addEventListener("click", function () {
 listLaser.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     laser.classList.toggle("visible");
+    listLaser.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -772,6 +952,21 @@ listLaser.addEventListener("click", function () {
 listGoggles.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     goggles.classList.toggle("visible");
+    listGoggles.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -792,6 +987,21 @@ listGoggles.addEventListener("click", function () {
 listMist.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     mist.classList.toggle("visible");
+    listMist.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -812,6 +1022,21 @@ listMist.addEventListener("click", function () {
 listCom.addEventListener("click", function () {
     characterImg.classList.add("hidden");
     comlink.classList.toggle("visible");
+    listCom.classList.toggle("clicked-li");
+    listMedpack.classList.remove("clicked-li");
+    listStimpack.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -831,7 +1056,22 @@ listCom.addEventListener("click", function () {
 //affichage des détails en cliquant sur le stimpack
 listStimpack.addEventListener("click", function () {
     characterImg.classList.add("hidden");
+    listStimpack.classList.toggle("clicked-li");
     stimpack.classList.toggle("visible");
+    listMedpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
@@ -851,7 +1091,22 @@ listStimpack.addEventListener("click", function () {
 //affichage des détails en cliquant sur le medpack
 listMedpack.addEventListener("click", function () {
     characterImg.classList.add("hidden");
+    listMedpack.classList.toggle("clicked-li");
     medpack.classList.toggle("visible");
+    listStimpack.classList.remove("clicked-li");
+    listCom.classList.remove("clicked-li");
+    listMist.classList.remove("clicked-li");
+    listGoggles.classList.remove("clicked-li");
+    listLaser.classList.remove("clicked-li");
+    listBanta.classList.remove("clicked-li");
+    listRepulsor.classList.remove("clicked-li");
+    listLaminate.classList.remove("clicked-li");
+    listPadded.classList.remove("clicked-li");
+    listStun.classList.remove("clicked-li");
+    listFrag.classList.remove("clicked-li");
+    listRifle.classList.remove("clicked-li");
+    listBlaster.classList.remove("clicked-li");
+    listKnife.classList.remove("clicked-li");
     vibroknife.classList.remove("visible");
     pistol.classList.remove("visible");
     rifle.classList.remove("visible");
